@@ -1,0 +1,48 @@
+{
+  "name": "drimstay",
+  "version": "1.0.0",
+  "description": "building managment",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "seed": "node config/seeder.js",
+    "seed:init": "md-seed init",
+    "seed:generate": "md-seed g",
+    "seed:run": "md-seed run",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/jose.castillo2/drim-stay.git"
+  },
+  "author": "josealfredo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/jose.castillo2/drim-stay/issues"
+  },
+  "homepage": "https://gitlab.com/jose.castillo2/drim-stay#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.19.0",
+    "camelcase": "^6.3.0",
+    "consola": "^2.15.3",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "eslint": "^8.10.0",
+    "express": "^4.17.2",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.21",
+    "moment": "^2.29.1",
+    "mongoose": "^6.0.14",
+    "mongoose-data-seed": "^2.1.6",
+    "node-fetch": "^3.2.1"
+  },
+  "devDependencies": {
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.3",
+    "nodemon": "^2.0.15"
+  },
+  "mdSeed": {
+    "seedersFolder": "./api/seeders"
+  }
+}
